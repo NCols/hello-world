@@ -4,5 +4,4 @@
 **/nanoserver/hello.txt
 .dockerignore
 .git
-Dockerfile*
 LICENSE
