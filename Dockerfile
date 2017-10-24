@@ -3,29 +3,6 @@ FROM cloudron/base:0.11.0
 
 RUN dpkg --add-architecture i386
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		gcc \
-		libc6-dev \
-		make \
-		\
-		libc6-dev:i386 \
-		libgcc-6-dev:i386 \
-		\
-		libc6-dev-arm64-cross \
-		libc6-dev-armel-cross \
-		libc6-dev-armhf-cross \
-		libc6-dev-ppc64el-cross \
-		libc6-dev-s390x-cross \
-		\
-		gcc-aarch64-linux-gnu \
-		gcc-arm-linux-gnueabi \
-		gcc-arm-linux-gnueabihf \
-		gcc-powerpc64le-linux-gnu \
-		gcc-s390x-linux-gnu \
-		\
-		file \
-	&& rm -rf /var/lib/apt/lists/*
-
 WORKDIR /app/code/hello
 COPY . .
 
