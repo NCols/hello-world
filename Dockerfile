@@ -1,5 +1,5 @@
 # explicitly use Debian for maximum cross-architecture compatibility
-FROM debian:stretch-slim
+FROM cloudron/base:0.11.0
 
 RUN dpkg --add-architecture i386
 
@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		file \
 	&& rm -rf /var/lib/apt/lists/*
 
-WORKDIR /usr/src/hello
+WORKDIR /app/code/hello
 COPY . .
 
 RUN set -ex; \

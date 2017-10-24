@@ -1,0 +1,22 @@
+{
+  "id": "com.example.helloworld",
+  "title": "Coucou world",
+  "author": "NC",
+  "description": "file://DESCRIPTION.md",
+  "changelog": "file://CHANGELOG",
+  "tagline": "One-line description",
+  "version": "0.1.0",
+  "healthCheckPath": "/",
+  "httpPort": 3000,
+  "addons": {
+    "localstorage": {}
+  },
+  "manifestVersion": 1,
+  "website": "https://example.com",
+  "contactEmail": "support@cloudron.io",
+  "icon": "",
+  "tags": [
+    "changeme"
+  ],
+  "mediaLinks": [ ]
+}
